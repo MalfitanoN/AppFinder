@@ -13,6 +13,7 @@ public class AppFinder extends AppCompatActivity {
     private TextView answerText;
 
     private SensorManager sensorManager;
+    private Sensor accelerometer;
     private float acceleration;
     private float currentAcceleration;
     private float previousAcceleration;
@@ -37,4 +38,14 @@ public class AppFinder extends AppCompatActivity {
         answerText = (TextView) findViewById(R.id.answerText);
         answerText.setText(Predictions.get().getPrediction());
     }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+    }
+    @Override
+    protected void onPause(){
+        super.onPause();
+    }
+
 }
