@@ -12,7 +12,8 @@ public class Predictions {
     
     private Predictions() {
         answers = new String[] {
-              "No, RIPSOOOCE"
+              "No, RIPSOOOCE",
+                "Not Today"
         };
     }
 
