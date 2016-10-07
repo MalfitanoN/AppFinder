@@ -5,6 +5,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.FloatMath;
@@ -34,6 +35,9 @@ public class AppFinder extends AppCompatActivity {
             acceleration = acceleration * 0.9f + delta;
 
             if(acceleration > 15){
+                MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.bomb);
+                mediaPlayer.start();
+
                 Toast toast = Toast.makeText(getApplication(), "Device has shaken", Toast.LENGTH_SHORT);
                 toast.show();
             }
