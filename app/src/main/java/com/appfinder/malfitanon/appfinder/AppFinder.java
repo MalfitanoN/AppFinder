@@ -59,6 +59,7 @@ public class AppFinder extends AppCompatActivity {
 
         answerText = (TextView) findViewById(R.id.answerText);
         answerText.setText(Predictions.get().getPrediction());
+        answerText.setText("XTRA BEAN SOOCE?");
     }
 
     @Override
