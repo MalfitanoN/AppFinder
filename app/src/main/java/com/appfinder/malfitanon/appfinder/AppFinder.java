@@ -14,6 +14,6 @@ public class AppFinder extends AppCompatActivity {
         setContentView(R.layout.activity_app_finder);
 
         answerText = (TextView) findViewById(R.id.answerText);
-        answerText.setText("No, You Suck");
+        answerText.setText(Predictions.get().getPrediction());
     }
 }
