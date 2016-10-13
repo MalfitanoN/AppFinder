@@ -16,8 +16,15 @@ public class Predictions {
 
     private Predictions() {
         answers = new String[] {
-              "No, RIPSOOOCE",
-                "Not Today"
+                "Clash Royale",
+                "Hill Climb",
+                "Crash Drive 2",
+                "Clash of Clans",
+                "Minecraft",
+                "Heads up",
+                "Bloon TD 5",
+                "NBA 2K 17",
+                "Geometry Dash"
         };
     }
 

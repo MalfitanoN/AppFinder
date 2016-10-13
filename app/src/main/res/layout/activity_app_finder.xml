@@ -18,6 +18,8 @@
         android:layout_height="wrap_content"
         android:textColor="#ffffff"
         android:textSize="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1150px"
 
-    />
+        android:textAlignment="center" />
 </RelativeLayout>
